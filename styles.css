@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+    padding-top: 60px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo svg {
+    width: 32px;
+    height: 32px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#sidebar {
+    position: fixed;
+    top: 60px;
+    left: -250px;
+    width: 250px;
+    height: calc(100% - 60px);
+    background-color: #fff;
+    box-shadow: 2px 0 4px rgba(0,0,0,0.1);
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+#sidebar.open {
+    left: 0;
+}
+
+#closeMenu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: #f0f0f0;
+}
+
+.nav-item svg {
+    margin-right: 0.5rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.featured-image {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.image-placeholder {
+    width: 400px; /* Ajusta el tamaño que desees */
+    height: 400px; /* Mismo valor que el ancho para hacerla circular */
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #666;
+    border-radius: 50%; /* Hace la imagen circular */
+    overflow: hidden; /* Asegura que el contenido se recorte dentro del borde */
+}
+
+.specialties {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1.1rem;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .logo svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .specialties {
+        padding: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.6rem;
+        font-size: 1rem;
+    }
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.vision-mission {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.vision, .mission {
+    flex: 1;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.vision-mission p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.values {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+}
+
+.values ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.values li {
+    flex: 1 1 200px;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
