@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Moderno - Menú de Programador</title>
+    <link rel="stylesheet" href="style/styleProducts.css">
+</head>
+<body>
+    <header>
+        <button id="menuToggle" aria-label="Abrir menú">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                <line x1="6" y1="1" x2="6" y2="4"></line>
+                <line x1="10" y1="1" x2="10" y2="4"></line>
+                <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+        </div>
+        <h1>Restaurante Moderno</h1>
+    </header>
+
+    <nav id="sidebar">
+        <a href="index.html" class="nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            Inicio
+        </a>
+        <a href="products.html" class="nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                <line x1="6" y1="1" x2="6" y2="4"></line>
+                <line x1="10" y1="1" x2="10" y2="4"></line>
+                <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+            Menú
+        </a>
+        <a href="#" class="nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            Reservaciones
+        </a>
+        <a href="#" class="nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            Contacto
+        </a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h2>Menú de Programador</h2>
+            <p>
+                Explora nuestra selección de platos inspirados en el mundo de la programación.
+                Cada bocado es una línea de código para tu paladar.
+            </p>
+        </section>
+
+        <section class="menu-container">
+            <div class="menu-category">
+                <h3>Entradas.init()</h3>
+                <ul class="product-list">
+                    <li><span class="product-name">Byte_de_Bruschetta</span> = <span class="product-description">(pan_tostado, tomate, albahaca); // Crujiente y fresco</span></li>
+                    <li><span class="product-name">Array_de_Antipasto</span> = <span class="product-description">[aceitunas, quesos, embutidos]; // Selección variada</span></li>
+                    <li><span class="product-name">Sopa.compile()</span> = <span class="product-description">("vegetales", "especias"); // Compilación diaria del chef</span></li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <h3>Platos_Principales.execute()</h3>
+                <ul class="product-list">
+                    <li><span class="product-name">Pasta.loop()</span> = <span class="product-description">{salsa: "carbonara", toppings: ["panceta", "queso"]); // Iteración cremosa</span></li>
+                    <li><span class="product-name">Steak.sort()</span> = <span class="product-description">("término medio", {guarnición: "papas"}); // Ordenado a la perfección</span></li>
+                    <li><span class="product-name">Pescado.catch()</span> = <span class="product-description">("salmón", {método: "a_la_parrilla"}); // Captura del día</span></li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <h3>Postres.sweetOutput()</h3>
+                <ul class="product-list">
+                    <li><span class="product-name">Tiramisú.layer()</span> = <span class="product-description">["café", "mascarpone", "cacao"]; // Capas de dulzura</span></li>
+                    <li><span class="product-name">Helado.freeze()</span> = <span class="product-description">("vainilla" || "chocolate"); // Congelado al momento</span></li>
+                    <li><span class="product-name">Frutas.map()</span> = <span class="product-description">(fruta => fruta.slice()); // Selección fresca en rodajas</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cta">
+            <p>¿Listo para ejecutar tu orden?</p>
+            <button class="cta-button">Reservar</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
