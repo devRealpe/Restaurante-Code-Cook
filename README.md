@@ -1,6 +1,6 @@
 # Link de la pagina web
 
-https://restaurante-code-cook.onrender.com
+https://restaurante-code-cook.onrender.com/index.html
 
 
 # Documentación de la estructura utilizada.
