@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI Emoji', sans-serif;
+    line-height: 1.6;
+    color: #FF9933;
+    background-color: #1A1A1A;
+    padding-top: 60px;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #2A2A2A;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo svg {
+    width: 32px;
+    height: 32px;
+    stroke: #33FF33;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: #33FF33;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#sidebar {
+    position: fixed;
+    top: 60px;
+    left: -250px;
+    width: 250px;
+    height: calc(100% - 60px);
+    background-color: #2A2A2A;
+    box-shadow: 2px 0 4px rgba(255, 255, 255, 0.1);
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+#sidebar.open {
+    left: 0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: #3A3A3A;
+}
+
+.nav-item svg {
+    margin-right: 0.5rem;
+    stroke: #A3D9D9;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+.activities-section {
+    margin-top: 60px;
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.activity-card {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.activity-card:hover, .activity-card:focus {
+    transform: translateY(-5px);
+    outline: none;
+}
+
+.activity-image {
+    width: auto;
+    height: auto;
+    object-fit:cover;
+}
+
+.activity-card h3 {
+    font-size: 20px;
+    margin: 15px 15px 10px;
+    color: #335555;
+}
+
+.activity-card > p {
+    font-size: 14px;
+    margin: 0 15px 15px;
+    color: #666;
+}
+
+.activity-details {
+    display: none;
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+}
+
+.activity-details p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.activity-card.active .activity-details {
+    display: block;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%; 
+    overflow:scroll; 
+}
+
+.activity-image {
+    width: auto; 
+    height: auto; 
+}
+
+
+@media (min-width: 1024px) {
+    .sidebar {
+        left: 0;
+    }
+
+    .menu-toggle, .close-btn {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .close-btn {
+        display: block;
+    }
+
+    .developers {
+        flex-direction: column;
+    }
+
+    .developer {
+        flex-basis: 100%;
+    }
+}
