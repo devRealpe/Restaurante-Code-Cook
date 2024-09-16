@@ -7,7 +7,7 @@
 body {
     font-family: 'Segoe UI Emoji', sans-serif;
     line-height: 1.6;
-    color: #FF9933;
+    color: #A3D9D9;
     background-color: #1A1A1A;
     padding-top: 60px;
     font-weight: bold;
@@ -94,7 +94,7 @@ button:hover {
 
 .nav-item svg {
     margin-right: 0.5rem;
-    color: #FF9933;
+    color: #A3D9D9;
 }
 
 main {
