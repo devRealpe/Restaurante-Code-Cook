@@ -192,6 +192,32 @@ li:last-child {
     transform: translateY(-2px);
 }
 
+.vision-mission {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.vision, .mission {
+    flex: 1;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.vision-mission p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
 @media (max-width: 768px) {
     main {
         padding: 1rem;
@@ -230,6 +256,40 @@ li:last-child {
         padding: 0.8rem 1.6rem;
         font-size: 1rem;
     }
+
+    .vision-mission {
+        display: inline;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .vision, .mission {
+        flex: 1;
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .vision-mission {
+        display: inline;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .vision, .mission {
+        flex: 1;
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        margin-bottom: 30px;
+    }
 }
 
 .hero {
@@ -250,31 +310,7 @@ h2 {
     margin: 0 auto;
 }
 
-.vision-mission {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
 
-.vision, .mission {
-    flex: 1;
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #222;
-}
-
-.vision-mission p {
-    font-size: 1.1rem;
-    color: #444;
-}
 
 .values {
     background-color: #fff;

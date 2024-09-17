@@ -112,11 +112,67 @@
     <main>
       <!-- Nueva sección de contacto -->
       <section id="contacto" class="contact-section">
-        <h2 style="font-size: 40px; text-align: center; margin-bottom: 25px">
+        <h2 class="h2" style="text-align: center; margin-bottom: 25px">
+          Déjanos tu comentario
+        </h2>
+
+        <div class="developer">
+          <p style="color: #fff; margin-top: 20px; margin-bottom: 20px">
+            Envíanos tus comentarios y sugerencias para ayudarnos a mejorar.
+            Cada mensaje será tomado en cuenta para ofrecer una mejor
+            experiencia y atención a nuestros clientes. ¡Tu opinión es
+            importante para nosotros!
+          </p>
+
+          <div class="contact-info-coment">
+            <!-- Sección de comentarios -->
+            <section id="comentarios" class="comments-section">
+              <form id="comment-form" class="comment-form">
+                <div class="form-group">
+                  <label for="comment-title">Título del comentario:</label>
+                  <input
+                    type="text"
+                    id="comment-title"
+                    name="comment-title"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="comment-type">Tipo de comentario:</label>
+                  <select id="comment-type" name="comment-type" required>
+                    <option value="">Selecciona un tipo</option>
+                    <option value="queja">Queja</option>
+                    <option value="recomendacion">Recomendación</option>
+                    <option value="felicitacion">Felicitación</option>
+                    <option value="sugerencia">Sugerencia</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="comment-text">Tu comentario:</label>
+                  <textarea
+                    id="comment-text"
+                    name="comment-text"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                  Enviar comentario
+                </button>
+              </form>
+              <div id="comments-list" class="comments-list"></div>
+            </section>
+          </div>
+        </div>
+
+        <h2
+          class="h2"
+          style="text-align: center; margin-bottom: 25px; margin-top: 60px"
+        >
           Contacto
         </h2>
         <div class="developer">
-          <p style="color: #fff; margin-top: 20px; font-size: 20px">
+          <p style="color: #fff; margin-top: 20px">
             Estamos aquí para atenderte. No dudes en contactarnos para cualquier
             consulta o reservación.
           </p>
@@ -184,7 +240,7 @@
           </div>
         </div>
 
-        <h3 style="font-size: 30px; margin-top: 50px; text-align: center">
+        <h3 class="h3" style="margin-top: 50px; text-align: center">
           Nuestros Desarrolladores
         </h3>
         <div class="developers">
@@ -220,6 +276,6 @@
       </section>
     </main>
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>

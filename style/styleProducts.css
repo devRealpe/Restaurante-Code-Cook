@@ -184,6 +184,29 @@ h3 {
     transform: translateY(-2px);
 }
 
+.menu-content {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el texto y la imagen */
+    align-items: center; /* Centrar verticalmente */
+    padding: 10px;
+    margin-left: 40px !important;
+    margin-right: -30px;
+}
+
+
+/* Puntos de quiebre */
+@media (max-width: 1024px) {
+    main {
+        padding: 1.5rem;
+    }
+
+    .menu-container {
+        display: grid;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+}
+
 @media (max-width: 768px) {
     main {
         padding: 1rem;
@@ -191,6 +214,15 @@ h3 {
 
     h1 {
         font-size: 1.2rem;
+    }
+
+    .menu-content {
+        display: flex;
+        justify-content: space-between; /* Espacio entre el texto y la imagen */
+        align-items: center; /* Centrar verticalmente */
+        padding: 10px;
+        margin-left: 40px !important;
+        margin-right: -30px;
     }
 
     .logo svg {
@@ -218,25 +250,45 @@ h3 {
         padding: 0.8rem 1.6rem;
         font-size: 1rem;
     }
+
+    .menu-container {
+        display: grid;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
 }
 
+@media (max-width: 480px) {
+    .cta-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .menu-content {
+        display: flex;
+        flex-direction: column; /* Apilar en filas */
+        justify-content: center; /* Centramos el contenido */
+        align-items: center; /* Alineación centrada */
+        padding: 10px;
+        margin-left: 0; /* Quitamos márgenes para centrar todo */
+        margin-right: 0;
+        text-align: center; /* Centrar el texto si es necesario */
+    }
+}
 .menu-item {
     list-style: none;
     margin-bottom: 30px;
 }
 
-.menu-content {
-    display: flex;
-    justify-content: space-between; /* Espacio entre el texto y la imagen */
-    align-items: center; /* Centrar verticalmente */
-    padding: 10px;
-    margin-left: 40px !important;
-    margin-right: -30px;
-}
+
 
 .text-content {
-    flex: 1; /* El texto ocupará más espacio */
-    margin-right: 10px; /* Espacio entre el texto y la imagen */
+    flex: 1;
+    margin-right: 10px;
 }
 
 .menu-image {
