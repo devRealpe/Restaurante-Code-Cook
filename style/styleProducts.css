@@ -213,84 +213,43 @@ h3 {
     }
 }
 
+/* Media queries para pantallas pequeñas */
 @media (max-width: 768px) {
-    main {
-        padding: 1rem;
-    }
-
-    h1 {
-        font-size: 1.2rem;
-    }
-
     .menu-content {
-        display: flex;
-        justify-content: space-between; /* Espacio entre el texto y la imagen */
-        align-items: center; /* Centrar verticalmente */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 10px;
-        margin-left: 40px !important;
-        margin-right: -30px;
-    }
-
-    .logo svg {
-        width: 24px;
-        height: 24px;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .menu-category {
-        padding: 1.5rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    .cta-button {
-        padding: 0.8rem 1.6rem;
-        font-size: 1rem;
-    }
-
-    .menu-container {
-        display: grid;
-        gap: 2rem;
-        margin-bottom: 3rem;
+        margin: 0;
     }
 
     .img {
-        width: 3%;
-        object-fit: fill;
-        border-radius: 50%;
+        width: 60px; /* Ajustar tamaño de imagen */
     }
 }
 
 @media (max-width: 480px) {
-    .cta-button {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.9rem;
+    .menu-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .img {
+        width: 50px; /* Tamaño más pequeño para pantallas muy reducidas */
     }
 
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
-    .menu-content {
-        display: flex;
-        flex-direction: column; /* Apilar en filas */
-        justify-content: center; /* Centramos el contenido */
-        align-items: center; /* Alineación centrada */
-        padding: 10px;
-        margin-left: 0; /* Quitamos márgenes para centrar todo */
-        margin-right: 0;
-        text-align: center; /* Centrar el texto si es necesario */
+    .cta-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
     }
-
 }
 
 @media (max-width: 600px) {
