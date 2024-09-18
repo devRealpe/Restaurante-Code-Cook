@@ -38,6 +38,12 @@ header {
     height: 32px;
 }
 
+.img {
+    width: 3%;
+    object-fit: fill;
+    border-radius: 50%;
+}
+
 h1 {
     font-size: 1.5rem;
     margin-left: 1rem;
@@ -218,6 +224,7 @@ h3 {
     color: #444;
 }
 
+
 @media (max-width: 768px) {
     main {
         padding: 1rem;
@@ -272,6 +279,7 @@ h3 {
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         margin-bottom: 30px;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -289,6 +297,21 @@ h3 {
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         margin-bottom: 30px;
+    }
+
+    .img {
+        width: 20%;
+        object-fit: fill;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .img {
+        width: 9%;
+        object-fit: fill;
+        border-radius: 50%;
     }
 }
 

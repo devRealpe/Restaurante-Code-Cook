@@ -113,6 +113,7 @@ button:hover {
 
 main {
     max-width: 1200px;
+    min-width: 300px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -142,14 +143,7 @@ main {
     gap: 10px; /* Espacio entre el ícono y el texto */
 }
 
-/* Responsive para pantallas pequeñas */
-@media (max-width: 768px) {
-    .contact-items-row {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px; /* Reduce el espacio entre los elementos al apilarlos en columnas */
-    }
-}
+
 
 .contact-item svg {
     margin-right: 10px;
@@ -174,6 +168,14 @@ main {
     border-color: #fff !important;
     min-width: 350px;
 }
+
+.img {
+    display: block;
+    width: 8%;
+    object-fit: fill;
+    border-radius: 50%;
+}
+
 
 .developer-image {
     width: 200px;
@@ -292,6 +294,30 @@ main {
     font-size: 40px;
 }
 
+/* Responsive para pantallas pequeñas */
+@media (max-width: 400px) {
+    .img {
+        width: 20%;
+        object-fit: fill;
+        border-radius: 50%;
+    }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contact-items-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Reduce el espacio entre los elementos al apilarlos en columnas */
+    }
+
+    .img {
+        width: 20%;
+        object-fit: fill;
+        border-radius: 50%;
+    }
+}
+
 @media (min-width: 1024px) {
     .sidebar {
         left: 0;
@@ -304,6 +330,14 @@ main {
     .main-content {
         margin-left: 250px;
     }
+
+    .img {
+        display: block;
+        width: 3%;
+        object-fit: fill;
+        border-radius: 50%;
+    }
+
 }
 
 @media (max-width: 1023px) {
@@ -322,4 +356,13 @@ main {
     .developer {
         flex-basis: 100%;
     }
+
+    .img {
+        display: block;
+        width: 6%;
+        object-fit: fill;
+        border-radius: 50%;
+    }
+
 }
+

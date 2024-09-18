@@ -94,6 +94,7 @@ button:hover {
 
 main {
     max-width: 1200px;
+    min-width: 300px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -193,6 +194,12 @@ h3 {
     margin-right: -30px;
 }
 
+.img {
+    width: 3%;
+    object-fit: fill;
+    border-radius: 50%;
+}
+
 
 /* Puntos de quiebre */
 @media (max-width: 1024px) {
@@ -256,6 +263,12 @@ h3 {
         gap: 2rem;
         margin-bottom: 3rem;
     }
+
+    .img {
+        width: 3%;
+        object-fit: fill;
+        border-radius: 50%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -278,7 +291,18 @@ h3 {
         margin-right: 0;
         text-align: center; /* Centrar el texto si es necesario */
     }
+
 }
+
+@media (max-width: 600px) {
+
+    .img {
+        width: 10%;
+        object-fit: fill;
+        border-radius: 50%;
+    }
+}
+
 .menu-item {
     list-style: none;
     margin-bottom: 30px;
