@@ -94,7 +94,6 @@ button:hover {
 
 main {
     max-width: 1200px;
-    min-width: 300px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -300,6 +299,10 @@ h3 {
         width: 10%;
         object-fit: fill;
         border-radius: 50%;
+    }
+
+    main {
+        padding: 1rem;
     }
 }
 
