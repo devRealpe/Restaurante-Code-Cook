@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code & Cook</title>
+    <link rel="icon" type="image/jpeg" href="img/Logo.jpeg" />
+    <link rel="stylesheet" href="style/stylePractice.css" />
+  </head>
+  <body>
+    <header>
+      <button id="menuToggle" aria-label="Abrir menú">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          color="#fff"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <a href="dataBase/dataBase.js" download="dataBase.js" class="submit-btn"
+        >Descargar base de datos</a
+      >
+    </header>
+
+    <nav id="sidebar">
+      <a href="index.html" class="nav-item">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        Inicio
+      </a>
+      <a href="contact.html" class="nav-item">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+          ></path>
+        </svg>
+        Contacto
+      </a>
+      <a href="shop.html" class="nav-item">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="9" cy="21" r="1" />
+          <circle cx="20" cy="21" r="1" />
+          <path
+            d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 001.98-1.73l1.22-7.27H6"
+          />
+        </svg>
+        Shop
+      </a>
+      <a href="university.html" class="nav-item">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+          <path
+            d="M20 22H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20z"
+          />
+        </svg>
+        University
+      </a>
+    </nav>
+
+    <main>
+      <section id="actividades" class="activities-section">
+        <h2 style="margin-bottom: 30px; font-size: 40px">Actividad práctica</h2>
+        <div class="activity-card" tabindex="0">
+          <div class="image-container" style="height: 500px">
+            <img
+              style="height: 200%"
+              src="img/createDatabase.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>Creación de la base de datos</h3>
+          <p>
+            El diseño de la base de datos se centra en los clientes, ya que
+            representan la principal fuente de información para el restaurante.
+            Se recopilan datos clave, como el total de dinero gastado por cada
+            cliente, lo que permite una mejor gestión contable. Además, se
+            registra la mesa más solicitada para identificar características que
+            puedan mejorar la comodidad de los demás espacios. También se
+            almacenan el número de visitas, el número de pedidos y la fecha de
+            nacimiento de los clientes, con el propósito de ofrecer un servicio
+            personalizado, como la celebración de cumpleaños, mejorando así la
+            atención y generando una mayor conexión con el cliente. Otros campos
+            adicionales permiten un seguimiento integral de cada cliente para
+            optimizar su experiencia en el restaurante.
+          </p>
+          <div class="activity-details">
+            <p>Campos: 17</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 500px">
+            <img
+              style="height: 200%"
+              src="img/databaseCompile.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>Compilación de la base de datos</h3>
+          <p>
+            Aquí se muestra el resultado de la compilación de nuestra base de
+            datos, que ha insertado un total de 59 registros de forma exitosa,
+            sin generar ningún inconveniente.
+          </p>
+          <div class="activity-details">
+            <p>Documentos insertados: 59</p>
+          </div>
+        </div>
+
+        <h2 style="margin-bottom: 30px; margin-top: 50px; font-size: 40px">
+          Operaciones
+        </h2>
+        <div class="activity-card" tabindex="0">
+          <div class="image-container" style="height: 500px">
+            <img
+              style="height: 200%"
+              src="img/primeraOperacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>1 operacion</h3>
+          <p>
+            Esta operación tiene como objetivo identificar a los clientes que
+            hayan realizado exactamente 9 visitas al restaurante y cuyo gasto
+            total sea igual o superior a 150,000. Esto nos permitirá ofrecerles
+            un descuento en su próxima visita.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 1 cliente</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/segundaOperacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>2 operacion</h3>
+          <p>
+            Esta operación busca identificar a los clientes cuyo gasto total sea
+            igual o superior a 400,000 o que hayan realizado más de 15 visitas
+            al restaurante, con el fin de premiarlos con una estampita del
+            restaurante.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 20 clientes</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/terceraOperacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>3 operacion</h3>
+          <p>
+            Aquí se están filtrando los clientes que tienen menos de 30 años y
+            han visitado el restaurante más de 5 veces. Este perfil de cliente
+            podría ser útil para analizar las preferencias de los clientes
+            jóvenes, quienes pueden influir en campañas de marketing dirigidas a
+            un público más juvenil.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 10 clientes</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/cuartaOperacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>4 operacion</h3>
+          <p>
+            Esta consulta busca identificar a los clientes que no realizan
+            muchos pedidos pero que, a pesar de ello, gastan más de 200,000
+            pesos. Estos clientes podrían ser grandes consumidores en una sola
+            visita, lo cual podría sugerir que disfrutan de comidas más
+            elaboradas o con acompañamientos premium.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 2 clientes</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/quintaOperacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>5 operacion</h3>
+          <p>
+            Esta operación filtra a los clientes que han recibido descuentos de
+            al menos 35,000 pesos. Es útil para identificar clientes que han
+            sido beneficiarios de promociones o descuentos importantes, lo cual
+            puede reflejar su valor como clientes recurrentes.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 15 clientes</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/sextaOperacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>6 operacion</h3>
+          <p>
+            Aquí se identifican los clientes que pasan más de 2 horas en el
+            restaurante. Este tipo de cliente podría disfrutar de la experiencia
+            del restaurante, lo cual podría indicar que están disfrutando de un
+            ambiente relajado o de eventos especiales, lo que podría dar pie a
+            promociones como "happy hours"
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 8 clientes</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/septimaOperacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>7 operacion</h3>
+          <p>
+            Identifica clientes que prefieren sentarse en la mesa A1. Esto puede
+            ayudar en la gestión de las reservas o en crear una experiencia
+            personalizada según las preferencias de los clientes.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 3 clientes</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/octavaOperacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>8 operacion</h3>
+          <p>
+            Se filtran los clientes que han gastado más de 400,000 pesos en
+            menos de 1 hora de estancia promedio. Estos clientes podrían estar
+            buscando una experiencia rápida pero de calidad, lo que puede
+            sugerir la necesidad de optimizar el servicio para este perfil.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 1 cliente</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/novenaOperacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>9 operacion</h3>
+          <p>
+            Esta consulta filtra a los clientes cuyo tipo no sea "VIP" ni
+            "Frecuente", lo cual puede ser útil para identificar cuantos
+            clientes existen fuera de este rango.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 20 clientes</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/decimaOperacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>10 operacion</h3>
+          <p>
+            Esta consulta busca clientes que hayan visitado el restaurante 5, 10
+            o 15 veces, o que hayan realizado 2, 4 o 6 pedidos. Es útil para
+            identificar patrones de comportamiento en clientes con una
+            frecuencia específica de interacción.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 16 clientes</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/11 operacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>11 operacion</h3>
+          <p>
+            Aquí se busca a los clientes cuyo total gastado no sea 50,000,
+            100,000 o 150,000 pesos. Esto es útil para enfocarse en clientes que
+            gastan cantidades fuera de ese rango.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 20 clientes</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/12 operacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>12 operacion</h3>
+          <p>
+            Aquí se excluyen clientes que han gastado 300,000 pesos o más o que
+            han visitado el restaurante más de 10 veces. Esto permite analizar
+            clientes que no son tan frecuentes ni de alto gasto, para buscar
+            formas de aumentar su compromiso con el restaurante.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 16 clientes</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/13 operacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>13 operacion</h3>
+          <p>
+            Filtra a los clientes que han hecho exactamente 4 pedidos o que han
+            recibido un descuento de 15,000 pesos. Esto es útil para analizar
+            patrones de clientes que han recibido un cierto nivel de servicio.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 3 clientes</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/14 operacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>14 operacion</h3>
+          <p>
+            Busca a los clientes que no han hecho exactamente 5 visitas y que no
+            estén en el rango de edad de 20 a 32 años. Esta consulta es útil
+            para identificar clientes fuera de ese rango demográfico y con
+            diferentes patrones de visitas.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 15 clientes</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/15 operacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>15 operacion</h3>
+          <p>
+            Filtra a los clientes cuyo total gastado no esté en los rangos
+            mencionados y que no hayan visitado más de 8 veces. Esto permite
+            enfocar esfuerzos en clientes con comportamiento medio o menos
+            recurrente.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 20 clientes</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/16 operacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>16 operacion</h3>
+          <p>
+            Excluye a los clientes que recibieron descuentos comunes (10,000,
+            15,000 o 20,000 pesos) y que hicieron más de 2 pedidos. Esto es útil
+            para enfocarse en clientes que no han recibido estos beneficios y
+            tienen un menor nivel de interacción.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 13 clientes</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/17 operacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>17 operacion</h3>
+          <p>
+            Busca a los clientes registrados después de enero de 2024 que no son
+            "VIP" y que no han gastado más de 100,000 pesos. Es útil para
+            identificar clientes nuevos con menor participación y diseñar
+            estrategias de fidelización.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 4 clientes</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/18 operacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>18 operacion</h3>
+          <p>
+            Busca a los clientes que viven en direcciones específicas o que no
+            sean del tipo "Regular" o "Nuevo". Esto permite segmentar clientes
+            basados en ubicación o fidelidad.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 20 clientes</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/19 operacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>19 operacion</h3>
+          <p>
+            Se excluyen clientes que han visitado más de 5 veces y que han
+            gastado 80,000 pesos o más. Esto permite enfocarse en clientes con
+            menor gasto y menor frecuencia de visitas.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 1 cliente</p>
+          </div>
+        </div>
+        <div class="activity-card" tabindex="0" style="margin-top: 40px">
+          <div class="image-container" style="height: 700px">
+            <img
+              style="height: auto; width: 100%"
+              src="img/20 operacion.png"
+              alt="Eventos privados"
+              class="activity-image"
+            />
+          </div>
+          <h3>20 operacion</h3>
+          <p>
+            Esta consulta excluye a los clientes que han realizado exactamente
+            1, 3 o 5 pedidos, permitiendo centrarse en aquellos con otros
+            patrones de pedido. Es útil para segmentar clientes con hábitos de
+            compra menos predecibles.
+          </p>
+          <div class="activity-details">
+            <p>Resultado: 20 clientes</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="scripts/scriptPractice.js"></script>
+  </body>
+</html>
