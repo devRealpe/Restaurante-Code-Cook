@@ -51,7 +51,7 @@ button {
     border: none;
     cursor: pointer;
     transition: transform 0.3s ease;
-    color: #33FF33;
+    color: #bbbebb;
 }
 
 button:hover {
