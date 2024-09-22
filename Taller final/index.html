@@ -27,7 +27,7 @@
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
       </button>
-      <img class="img" src="img/Logo.jpeg" alt="placeholder" />
+      <img class="img" src="img/LogoMongoDB.jpeg" alt="placeholder" />
     </header>
 
     <nav id="sidebar">
@@ -109,74 +109,353 @@
 
     <main>
       <section class="hero">
-        <h2 style="font-size: 40px">¡Bienvenidos a Code & Cook!</h2>
+        <h2 style="font-size: 40px">
+          ¡Bienvenidos al taller de evaluación de MongoDB!
+        </h2>
         <p style="font-size: 20px">
-          En Code & Cook, fusionamos dos mundos poderosos: la programación y la
-          gastronomía. Cada plato es creado con el mismo cuidado y precisión que
-          una línea de código, desde su concepción hasta su preparación,
-          logrando que cada receta tenga un toque único, personalizado por
-          nuestros programadores-chefs. Aquí, cada plato cuenta una historia que
-          refleja la creatividad y la pasión de quien lo programa.
+          Este taller tiene como objetivo aprender de manera práctica el manejo
+          de comandos básicos para el uso correcto de MongoDB. Se abordarán
+          consultas, sintaxis, manejo de colecciones y otros temas relevantes.
+          Además, se utilizarán bases de datos extraídas de contextos reales
+          para comprender mejor cómo se comportan ciertos datos y cómo
+          gestionarlos adecuadamente
         </p>
       </section>
 
       <section class="featured-image">
         <div class="image-placeholder">
           <img
-            src="img/Logo.jpeg"
+            src="img/LogoMongoDB.jpeg"
             alt="placeholder"
             style="width: 100%; height: 100%; object-fit: cover"
           />
         </div>
       </section>
-
+      <hr style="margin-bottom: 30px" />
       <section class="hero">
-        <h2>Nuestra Visión y Misión</h2>
-        <p style="font-size: 20px">Descubre la esencia de Code & Cook.</p>
+        <h3 style="color: #a3d9d9">Taller 1</h3>
+        <p style="font-size: 20px">
+          En Mongo Db online, crear una base de datos de 40 carros
+        </p>
+      </section>
+
+      <section class="featured-image-l">
+        <div class="image-placeholder-l">
+          <img
+            src="img/carro.jpeg"
+            alt="placeholder"
+            style="width: 150px; height: 150px; object-fit: cover"
+          />
+        </div>
       </section>
 
       <section class="vision-mission">
         <div class="vision">
-          <h3>Nuestra Visión</h3>
+          <h3>Los carros deben tener estas 10 propiedades:</h3>
           <p>
-            Nuestra visión es ser el restaurante preferido y número uno para
-            todos los programadores, un lugar donde la pasión por la
-            programación se encuentra con el amor por la comida. Imaginamos un
-            espacio donde cada visita sea una experiencia única, combinando la
-            creatividad y el ingenio de nuestros chefs-programadores con una
-            cocina innovadora y deliciosa, queremos convertirnos en el punto de
-            encuentro ideal para quienes buscan disfrutar de una comida
-            excepcional mientras comparten su amor por la tecnología y el
-            código. En Code & Cook, aspiramos a ser más que un simple
-            restaurante, queremos ser una comunidad vibrante donde se celebren
-            los éxitos en la programación.
+            1.Marca: (Texto) El nombre del fabricante del automóvil. <br />2.
+            Modelo: (Texto) El nombre o número del modelo específico del
+            automóvil. <br />3. Año de fabricación: (Numérico) El año en que se
+            produjo el automóvil. <br />4. Precio: (Numérico) El costo del
+            automóvil en la moneda local. <br />5. Consumo de combustible:
+            (Numérico) La cantidad de combustible que el automóvil consume por
+            kilómetro o milla recorrida. <br />6. Color: (Texto) El color
+            exterior del automóvil. <br />7. Capacidad de pasajeros: (Numérico)
+            El número máximo de personas que pueden viajar en el automóvil.
+            <br />8. Tipo de transmisión: (Texto) Manual, automático, CVT, etc.
+            <br />9. Potencia del motor: (Numérico) La potencia del motor del
+            automóvil, generalmente medida en caballos de fuerza (HP) o
+            kilovatios (kW). <br />10. Sistema de seguridad: (Texto) Una
+            descripción de las características de seguridad del automóvil, como
+            airbags, sistemas de frenado ABS, control de estabilidad, etc.
           </p>
         </div>
         <div class="mission">
-          <h3>Nuestra Misión</h3>
+          <h3>
+            A la base de datos de mongo debe realizarle las siguientes
+            operaciones:
+          </h3>
           <p>
-            Nuestra misión es ofrecer una experiencia, donde cada plato se
-            prepara con los más altos estándares de calidad, no solo te
-            brindamos comida deliciosa, sino que también te proporcionamos un
-            entorno ideal para que puedas trabajar, a prender y conectar con
-            otros apasionados de la programación. Mientras disfrutas de nuestra
-            innovadora oferta gastronómica, tienes la oportunidad de sumergirte
-            en temas relacionados con la programación, compartir conocimientos y
-            conocer a personas que comparten tus intereses y objetivos. Queremos
-            que cada visita sea una combinación perfecta de sabor, aprendizaje y
-            networking, creando un espacio donde la comunidad tecnológica pueda
-            crecer y disfrutar al mismo tiempo
+            1.$eq: Igual que = (Color) <br />2.$gt: Mayor que > (año de
+            fabricación) <br />3.$gte: Mayor e igual que >= (precio)
+            <br />4.$lt: Menor que< (capacidad de pasajeros) <br />5.$lte: Menor
+            e igual que <= (Potencia del motor) <br />6.$ne: Diferente !=
+            (marca) <br />7.$in: Valores dentro de un rango ( propio) $nin:
+            Valores que no están dentro de un rango ( propio) <br />8.
+            <br />9.db.collection.find() (Propio) <br />10.Borrar un carro
+            utilizando (db.collection.deleteOne( )
+          </p>
+        </div>
+      </section>
+
+      <hr style="margin-bottom: 30px" />
+      <section class="hero">
+        <h3 style="color: #a3d9d9">Taller 2</h3>
+        <p style="font-size: 20px">
+          En Mongo Db online, crear una base de datos de 40 productos del
+          mercado
+        </p>
+      </section>
+
+      <section class="featured-image-l">
+        <div class="image-placeholder-l">
+          <img
+            src="img/productos.jpeg"
+            alt="placeholder"
+            style="width: 150px; height: 150px; object-fit: cover"
+          />
+        </div>
+      </section>
+
+      <section class="vision-mission">
+        <div class="vision">
+          <h3>Los productos deben tener estas 10 propiedades:</h3>
+          <p>
+            1. Nombre del producto: Texto que identifica el nombre del
+            producto.<br />
+            2. Descripción: Texto que proporciona detalles sobre el producto y
+            sus características.<br />
+            3. Precio: Valor numérico que indica el precio del producto.<br />
+            4. Categoría: Texto que clasifica el producto en una categoría
+            específica (por ejemplo, electrónica, ropa, alimentos, etc.).<br />
+            5. Disponibilidad en inventario: Valor numérico que indica la
+            cantidad de unidades disponibles en el inventario.<br />
+            6. Marca: Texto que identifica la marca o fabricante del
+            producto.<br />
+            7. Número de modelo: Texto o número que identifica el modelo
+            específico del producto.<br />
+            8. Peso: Valor numérico que indica el peso del producto (por
+            ejemplo, en kilogramos o libras).<br />
+            9. Unidades vendidas: Valor numérico que indica la cantidad de
+            unidades del producto que han sido vendidas.<br />
+            10. Valoración promedio: Valor numérico que indica la valoración
+            promedio del producto por parte de los clientes.
+          </p>
+        </div>
+        <div class="mission">
+          <h3>
+            A la base de datos de mongo debe realizarle las siguientes
+            operaciones:
+          </h3>
+          <p>
+            1.$eq: Igual que = (Nombre del producto) <br />2. $gt: Mayor que >
+            (precio) <br />3. $gte: Mayor e igual que >= (disponibilidad
+            inventario) <br />
+            4.$lt: Menor que< (numero modelo) <br />5.$lte: Menor e igual que <=
+            (Peso) <br />6.$ne: Diferente != (Unidades Vendidas) <br />7. $in:
+            Valores dentro de un rango ( Valoracion Promedio) <br />8. $nin:
+            Valores que no están dentro de un rango ( propio)
+            <br />9.db.collection.find() (Propio) <br />10.actualiza un
+            produtcto (db.collection.updateOne( )
+          </p>
+        </div>
+      </section>
+
+      <hr style="margin-bottom: 30px" />
+      <section class="hero">
+        <h3 style="color: #a3d9d9">Taller 3</h3>
+        <p style="font-size: 20px">
+          En Mongo Db online, crear una base de datos de 40 hoteles
+        </p>
+      </section>
+
+      <section class="featured-image-l">
+        <div class="image-placeholder-l">
+          <img
+            src="img/hotel.jpeg"
+            alt="placeholder"
+            style="width: 150px; height: 150px; object-fit: cover"
+          />
+        </div>
+      </section>
+
+      <section class="vision-mission">
+        <div class="vision">
+          <h3>
+            Los hoteles deben tener estas 10 propiedades: Nombre del hotel:
+          </h3>
+          <p>
+            1. El nombre del establecimiento hotelero. <br />
+            2. Ubicación: La dirección física del hotel, incluyendo ciudad, país
+            y código postal.<br />
+            3. Clasificación o categoría: La clasificación del hotel según
+            estrellas u otro sistema de calificación.<br />
+            4. Descripción: Una breve descripción del hotel, sus instalaciones y
+            servicios.<br />
+            5. Capacidad de personas por habitación: El número máximo de
+            personas que pueden alojarse en una habitación.<br />
+            6. Área total del hotel: La medida total del espacio ocupado por el
+            hotel, en metros cuadrados.<br />
+            7. Tarifa promedio por estadía: El costo promedio por noche
+            multiplicado por la duración típica de la estadía.<br />
+            8. Número de pisos: El total de pisos o niveles que tiene el
+            hotel.<br />
+            9. Tamaño de las habitaciones: El área en metros cuadrados de cada
+            tipo de habitación.<br />
+            10. Ingresos mensuales: La cantidad total de ingresos generados por
+            el hotel en un mes determinado.<br />
+          </p>
+        </div>
+        <div class="mission">
+          <h3>
+            A la base de datos de mongo debe realizarle las siguientes
+            operaciones:
+          </h3>
+          <p>
+            1.$eq: Igual que = (Nombre del hotel)<br />
+            2.$gt: Mayor que > (Clasifiacion o categoria)<br />
+            3. $gte: Mayor e igual que >= (Tarifa promedio por estadia )<br />
+            4.$lt: Menor que< (Area total de un hotel)<br />
+            5.$lte: Menor e igual que <= (Capacidad de personas)<br />
+            6.$ne: Diferente != (Ubicacion)<br />
+            7. $in: Valores dentro de un rango ( Ingresos mensuales)<br />
+            8. $nin: Valores que no están dentro de un rango ( propio)<br />
+            9.db.collection.find() (Propio)<br />
+            10.elimina un hote
+          </p>
+        </div>
+      </section>
+
+      <hr style="margin-bottom: 30px" />
+      <section class="hero">
+        <h3 style="color: #a3d9d9">Taller 4</h3>
+        <p style="font-size: 20px">
+          En Mongo Db online, crear una base de datos de 40 materias de una
+          universidad
+        </p>
+      </section>
+
+      <section class="featured-image-l">
+        <div class="image-placeholder-l">
+          <img
+            src="img/uni.jpeg"
+            alt="placeholder"
+            style="width: 150px; height: 150px; object-fit: cover"
+          />
+        </div>
+      </section>
+
+      <section class="vision-mission">
+        <div class="vision">
+          <h3>Las materias deben tener estas 10 propiedades:</h3>
+          <p>
+            1. Nombre de la materia: Texto que identifica el nombre completo de
+            la materia.<br />
+            2. Código de la materia: Texto que representa el código único
+            asignado a la materia.<br />
+            3. Descripción: Texto que proporciona una descripción detallada de
+            la materia, incluyendo objetivos, contenido y requisitos previos.<br />
+            4. Créditos: Valor numérico que indica la cantidad de créditos
+            asignados a la materia.<br />
+            5. Horas de clases teóricas: Valor numérico que representa la
+            cantidad de horas de clases teóricas por semana.<br />
+            6. Horas de clases prácticas: Valor numérico que representa la
+            cantidad de horas de clases prácticas (laboratorio, talleres, etc.)
+            por semana.<br />
+            7. Profesor(es) responsable(s): Texto que enumera el nombre o
+            nombres de los profesores responsables de la materia.<br />
+            8. Aula(s) asignada(s): Texto que indica el número o nombres de las
+            aulas asignadas para las clases de la materia.<br />
+            9. Prerrequisitos: Texto que enumera las materias o requisitos
+            previos necesarios para cursar la materia.<br />
+            10. Promedio de calificaciones: Valor numérico que representa el
+            promedio de las calificaciones obtenidas por los estudiantes en la
+            materia.
+          </p>
+        </div>
+        <div class="mission">
+          <h3>
+            A la base de datos de mongo debe realizarle las siguientes
+            operaciones:
+          </h3>
+          <p>
+            1.$eq: Igual que = (Nombre de la materia)<br />
+            2.$gt: Mayor que > (Creditos)<br />
+            3.$gte: Mayor e igual que >= (Horas de clases teóricas )<br />
+            4.$lt: Menor que< (Horas de clases prácticas)<br />
+            5.$lte: Menor e igual que <= (Código de la materia)<br />
+            6.$ne: Diferente != (Profesor(es) responsable(s))<br />
+            7.$in: Valores dentro de un rango ( Aula(s) asignada(s))<br />
+            8.$nin: Valores que no están dentro de un rango ( propio)<br />
+            9.db.collection.find() (Propio)<br />
+            10.Elimina una materia
+          </p>
+        </div>
+      </section>
+
+      <hr style="margin-bottom: 30px" />
+      <section class="hero">
+        <h3 style="color: #a3d9d9">Taller 5</h3>
+        <p style="font-size: 20px">
+          En Mongo Db online, crear una base de datos de 40 platos del menu de
+          un restaurante
+        </p>
+      </section>
+
+      <section class="featured-image-l">
+        <div class="image-placeholder-l">
+          <img
+            src="img/uni.jpeg"
+            alt="placeholder"
+            style="width: 150px; height: 150px; object-fit: cover"
+          />
+        </div>
+      </section>
+
+      <section class="vision-mission">
+        <div class="vision">
+          <h3>Los Platos deben tener estas 10 propiedades:</h3>
+          <p>
+            1. Nombre del plato: Texto que identifica el nombre del plato.<br />
+            2. Descripción: Texto que proporciona detalles sobre el plato,
+            incluyendo ingredientes, preparación o características
+            especiales.<br />
+
+            3.Precio: Valor numérico que indica el costo del plato.<br />
+            4. Categoría: Texto que clasifica el plato en una categoría
+            específica (por ejemplo, entradas, platos principales, postres,
+            etc.).<br />
+            5. Tiempo de preparación: Valor numérico que indica el tiempo
+            estimado necesario para preparar el plato.<br />
+            6. Calorías: Valor numérico que indica la cantidad de calorías que
+            contiene el plato.<br />
+            7. Ingredientes principales: Texto que enumera los ingredientes
+            principales del plato.<br />
+            8. Nivel de picante: Texto que describe el nivel de picante del
+            plato (por ejemplo, suave, medio, picante).<br />
+            9. Disponibilidad: Valor numérico que indica la cantidad de platos
+            disponibles en el inventario.<br />
+            10. Popularidad: Valor numérico que indica la popularidad del plato,
+            por ejemplo, basado en el número de veces que se ha ordenado.
+          </p>
+        </div>
+        <div class="mission">
+          <h3>
+            A la base de datos de mongo debe realizarle las siguientes
+            operaciones:
+          </h3>
+          <p>
+            1. $eq:Igual que = (Nombre del plato)<br />
+            2. $gt: Mayor que > (categoria)<br />
+            3. $gte: Mayor e igual que >= (Tiempo de preparacion )<br />
+            4. $lt: Menor que< (Disponibilidad)<br />
+            5. $lte: Menor e igual que <= (popularidad)<br />
+            6. $ne: Diferente != (Nivel de picante<br />
+            7. $in: Valores dentro de un rango ( Calorias)<br />
+            8. $nin: Valores que no están dentro de un rango ( propio)<br />
+            9. db.collection.find() (Propio)<br />
+            10 .Actualiza un plato del menu
           </p>
         </div>
       </section>
 
       <section class="values">
-        <h3>Nuestros Valores</h3>
+        <h3>Resultados esperados</h3>
         <ul>
-          <li>Respeto</li>
-          <li>Confianza</li>
-          <li>Ayuda</li>
-          <li>Atención</li>
+          <li>Nota 5</li>
+          <li>10 decimas adicionales</li>
+          <li>Exoneración de los próximos talleres</li>
+          <li>Asistencia a clases (opcional)</li>
         </ul>
       </section>
     </main>

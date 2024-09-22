@@ -134,6 +134,13 @@ h2 {
     justify-content: center; /* Centra horizontalmente */
 }
 
+.featured-image-l {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin-bottom: 30px;
+    margin-top: -30px;
+}
+
 .image-placeholder {
     width: 400px; /* Ajusta el tamaño que desees */
     height: 400px; /* Mismo valor que el ancho para hacerla circular */
@@ -145,6 +152,20 @@ h2 {
     color: #666;
     border-radius: 50%; /* Hace la imagen circular */
     overflow: hidden; /* Asegura que el contenido se recorte dentro del borde */
+}
+
+.image-placeholder-l {
+    width: 150px; /* Ajusta el tamaño que desees */
+    height: 150px; /* Mismo valor que el ancho para hacerla circular */
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #666;
+    border-radius: 50%; /* Hace la imagen circular */
+    overflow: hidden; /* Asegura que el contenido se recorte dentro del borde */
+
 }
 
 .specialties {
