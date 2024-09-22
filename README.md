@@ -1,4 +1,17 @@
-# Link de la pagina web
+# Link de la pagina web TALLER EVALUATIVO
+
+https://taller-evaluativo.onrender.com
+
+# Referencias de las bases de datos:
+
+- Base de datos de carros:
+- Base de datos de productos de mercado: https://www.kaggle.com/datasets/PromptCloudHQ/flipkart-products
+- Base de datos de productos de hoteles: 
+- Base de datos de materias de universidad: https://www.umariana.edu.co/ingenieria-sistemas.html
+- Base de datos de menu de restaurante: 
+
+
+# Link de la pagina web RESTAURANTE
 
 https://restaurante-code-cook.onrender.com/index.html
 
