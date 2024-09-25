@@ -5,10 +5,28 @@ https://taller-evaluativo.onrender.com
 # Referencias de las bases de datos:
 
 - Base de datos de carros:
+    https://carros.tucarro.com.co/
+    https://mintransporte.gov.co/publicaciones/346/bases-de-datos/
+    https://coche.car2db.com/
+    https://rpubs.com/dangyiseo/1105749
 - Base de datos de productos de mercado: https://www.kaggle.com/datasets/PromptCloudHQ/flipkart-products
-- Base de datos de productos de hoteles: 
+- Base de datos de productos de hoteles:
+    https://www.peninsula.com/en/beverly-hills/
+    https://www.booking.com/
+    https://www.thebreakers.com/
+    https://www.peninsula.com/en/chicago/
+    https://www.fourseasons.com/losangeles/
+    https://www.peninsula.com/en/new-york/
+    https://www.hotelesmx.com/mx-centro/
+    http://www.villadelmarhotel.com.mx/
+    http://www.hotelsanfranciscoleonguanjuato.com/
+    https://www.hotelfontanreforma.com/
+    https://www.marquisreforma.com/
+    https://all.accor.com/hotel/8068/index.en.shtml
+    https://es.scribd.com/doc/257313498/Listado-de-Hoteles-Bogota
+    https://www.sociedadcolombianadearquitectos.org/PDF/HotelesMonteriaJuegosNacionales_SCA.pdf 
 - Base de datos de materias de universidad: https://www.umariana.edu.co/ingenieria-sistemas.html
-- Base de datos de menu de restaurante: 
+- Base de datos de menu de restaurante: https://www.instagram.com/figopasto/?hl=es
 
 
 # Link de la pagina web RESTAURANTE
