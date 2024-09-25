@@ -11,18 +11,12 @@ https://taller-evaluativo.onrender.com
     https://rpubs.com/dangyiseo/1105749
 - Base de datos de productos de mercado: https://www.kaggle.com/datasets/PromptCloudHQ/flipkart-products
 - Base de datos de productos de hoteles:
-    https://www.peninsula.com/en/beverly-hills/
     https://www.booking.com/
     https://www.thebreakers.com/
     https://www.peninsula.com/en/chicago/
     https://www.fourseasons.com/losangeles/
-    https://www.peninsula.com/en/new-york/
     https://www.hotelesmx.com/mx-centro/
     http://www.villadelmarhotel.com.mx/
-    http://www.hotelsanfranciscoleonguanjuato.com/
-    https://www.hotelfontanreforma.com/
-    https://www.marquisreforma.com/
-    https://all.accor.com/hotel/8068/index.en.shtml
     https://es.scribd.com/doc/257313498/Listado-de-Hoteles-Bogota
     https://www.sociedadcolombianadearquitectos.org/PDF/HotelesMonteriaJuegosNacionales_SCA.pdf 
 - Base de datos de materias de universidad: https://www.umariana.edu.co/ingenieria-sistemas.html
